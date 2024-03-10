@@ -1,12 +1,15 @@
-FROM node:lts-alpine
+ARG BUILD_FROM
+FROM ${BUILD_FROM}
 
+# Set workdir
 WORKDIR /app
-ENV LOGLEVEL="info"
-ENV MQTT_BROKER_URL="mqtt://127.0.0.1"
 
+# Copy root filesystem
+COPY app.js /app
 COPY package.json /app
 COPY package-lock.json /app
 
+# Run
 RUN npm ci
 COPY . /app
 
