@@ -1,0 +1,6 @@
+build_from:
+  amd64: "ghcr.io/vordenken/deye-microinverter-cloud-free/deye-dummycloud:latest"
+labels:
+  org.opencontainers.image.title: "Deye Dummycloud"
+  org.opencontainers.image.source: "https://github.com/vordenken/deye-microinverter-cloud-free/tree/main/dummycloud"
+  org.opencontainers.image.description: "All credits go to GitHub users Hypfer and vordenken! This is a small Node.js service that mocks the Deye Solarman cloud and publishes all data to an MQTT broker. It also takes care of Home Assistant autodiscovery leading to things just work"
