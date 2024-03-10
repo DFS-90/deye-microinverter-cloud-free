@@ -1,3 +1,17 @@
+# Why this fork?
+
+I created a HomeAssistant add-on repository that makes it possible to install the Deye dummycloud as a HomeAssistant Supervisor add-on.
+
+All you need to do is to add
+https://github.com/DFS-90/deye-microinverter-cloud-free
+as an add-on repository
+(e. g. explained [here](https://theprivatesmarthome.com/how-to/add-community-add-on-repository-in-home-assistant/)).
+<br><br><br>
+<b>All credits go to GitHub users [Hypfer](https://github.com/Hypfer) and [vordenken](https://github.com/vordenken) who did an excellent job by developing the dummycloud and generating the Docker image!</b>
+<br><br>
+
+# This is the original README:
+
 # Deye Microinverter - Cloud-free
 
 ![Deye microinverter in the sun](img/banner.jpg)
