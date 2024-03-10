@@ -1,0 +1,29 @@
+name: Deye-Dummycloud
+version: "1.0.0"
+slug: deye_dummycloud
+description: "All credits go to GitHub users Hypfer and vordenken! This is a small Node.js service that mocks the Deye Solarman cloud and publishes all data to an MQTT broker. It also takes care of Home Assistant autodiscovery leading to things just work"
+url: "https://github.com/vordenken/deye-microinverter-cloud-free/tree/main/dummycloud"
+init: false
+startup: application
+legacy: true
+arch: 
+- amd64
+map:
+- addons:rw
+options:
+  LOGLEVEL: "info"
+  MQTT_BROKER_URL: "mqtt://core-mosquitto"
+  MQTT_USERNAME: ""
+  MQTT_PASSWORD: ""
+  MQTT_CHECK_CERT: "false"
+schema:
+  LOGLEVEL: "str"
+  MQTT_BROKER_URL: "str"
+  MQTT_USERNAME: "str?"
+  MQTT_PASSWORD: "password?"
+  MQTT_CHECK_CERT: "bool"
+host_network: true
+ports:
+  10000/tcp: 10000
+ports_description:
+  10000/tcp: "Port for Deye inverter"
